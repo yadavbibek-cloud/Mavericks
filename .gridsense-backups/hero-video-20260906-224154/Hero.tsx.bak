@@ -1,0 +1,109 @@
+"use client";
+import Link from "next/link";
+import { ArrowRight, MapPin, Info } from "lucide-react";
+
+interface HeroProps {
+  animated?: boolean;
+}
+
+export function Hero({ animated = true }: HeroProps) {
+  return (
+    <section className="relative min-h-screen bg-gs-bg-primary flex items-center justify-center overflow-hidden">
+      {/* Subtle grid backdrop */}
+      <div
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(37,183,211,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(37,183,211,0.06) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+        }}
+      />
+
+      {/* Radial glow */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] rounded-full opacity-30"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(37,183,211,0.25) 0%, transparent 60%)",
+          }}
+        />
+      </div>
+
+      <div className="relative z-10 container-official text-center py-24">
+        {/* Small badge */}
+        <div
+          className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gs-bg-panel border border-gs-border text-xs font-mono uppercase tracking-widest text-gs-text-secondary mb-8 ${
+            animated ? "animate-fade-in" : ""
+          }`}
+        >
+          <div className="w-1.5 h-1.5 rounded-full bg-gs-green-500 animate-pulse-dot" />
+          <span>National Grid Intelligence Platform</span>
+        </div>
+
+        {/* Main title */}
+        <h1
+          className={`text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-institutional mb-6 ${
+            animated ? "animate-title-reveal" : ""
+          }`}
+        >
+          GRID<span className="text-gs-cyan-400 animate-subtle-glow">SENSE</span>
+        </h1>
+
+        {/* Subtitle */}
+        <div
+          className={animated ? "animate-fade-in-up" : ""}
+          style={animated ? { animationDelay: "0.5s", opacity: 0 } : {}}
+        >
+          <p className="text-gs-text-secondary text-lg md:text-xl font-light tracking-wide mb-2">
+            AI-POWERED GRID INTELLIGENCE
+          </p>
+          <p className="text-gs-text-tertiary text-base md:text-lg italic max-w-2xl mx-auto mb-10">
+            "Predicting risk before disruption becomes failure."
+          </p>
+        </div>
+
+        {/* Buttons */}
+        <div
+          className={`flex flex-col sm:flex-row items-center justify-center gap-3 ${
+            animated ? "animate-fade-in-up" : ""
+          }`}
+          style={animated ? { animationDelay: "0.9s", opacity: 0 } : {}}
+        >
+          <Link
+            href="/map-explorer"
+            className="group inline-flex items-center gap-2 px-7 py-3 bg-gs-blue-500 hover:bg-gs-blue-600 text-white font-medium rounded-md transition-all shadow-lg shadow-gs-blue-500/20"
+          >
+            Explore Grid
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+          <Link
+            href="/map-explorer"
+            className="inline-flex items-center gap-2 px-7 py-3 bg-gs-bg-panel hover:bg-gs-bg-elevated border border-gs-border hover:border-gs-cyan-500/50 text-gs-text-primary font-medium rounded-md transition-all"
+          >
+            <MapPin className="w-4 h-4" />
+            Map Explorer
+          </Link>
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-2 px-5 py-3 text-gs-text-secondary hover:text-white font-medium transition-colors"
+          >
+            <Info className="w-4 h-4" />
+            Learn about GridSense
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
+      </div>
+
+      {/* Bottom scroll cue */}
+      <div
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 text-gs-text-tertiary text-[10px] font-mono tracking-widest ${
+          animated ? "animate-fade-in" : ""
+        }`}
+        style={animated ? { animationDelay: "1.5s", opacity: 0 } : {}}
+      >
+        SCROLL TO EXPLORE ↓
+      </div>
+    </section>
+  );
+}
