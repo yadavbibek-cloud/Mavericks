@@ -1,0 +1,1582 @@
+{
+  "grid_state": {
+    "timestamp": "2026-09-06T12:00:00Z",
+    "grid_id": "ieee24",
+    "nodes": [
+      {
+        "id": "G1",
+        "bus_id": 0,
+        "name": "G1 (138kV)",
+        "type": "generator",
+        "position": {
+          "x": -6.0,
+          "y": 0.0,
+          "z": -7.0
+        },
+        "features": {
+          "load_pct": 20.0,
+          "voltage_pu": 1.035,
+          "temperature_c": 29.7,
+          "age_years": 12.0,
+          "capacity_mva": 552.0,
+          "p_mw": -64.0,
+          "q_mvar": -31.57,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G2",
+        "bus_id": 1,
+        "name": "G2 (138kV)",
+        "type": "generator",
+        "position": {
+          "x": -4.0,
+          "y": 0.0,
+          "z": -7.0
+        },
+        "features": {
+          "load_pct": 17.9,
+          "voltage_pu": 1.035,
+          "temperature_c": 29.4,
+          "age_years": 13.0,
+          "capacity_mva": 552.0,
+          "p_mw": -75.0,
+          "q_mvar": -22.85,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "B3",
+        "bus_id": 2,
+        "name": "B3 (138kV)",
+        "type": "load",
+        "position": {
+          "x": -5.0,
+          "y": 0.0,
+          "z": -4.5
+        },
+        "features": {
+          "load_pct": 33.3,
+          "voltage_pu": 0.952,
+          "temperature_c": 32.7,
+          "age_years": 14.0,
+          "capacity_mva": 552.0,
+          "p_mw": 180.0,
+          "q_mvar": 37.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "S4",
+        "bus_id": 3,
+        "name": "S4 (138kV)",
+        "type": "substation",
+        "position": {
+          "x": -7.0,
+          "y": 0.0,
+          "z": -2.5
+        },
+        "features": {
+          "load_pct": 13.7,
+          "voltage_pu": 0.976,
+          "temperature_c": 28.8,
+          "age_years": 15.0,
+          "capacity_mva": 552.0,
+          "p_mw": 74.0,
+          "q_mvar": 15.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "B5",
+        "bus_id": 4,
+        "name": "B5 (138kV)",
+        "type": "load",
+        "position": {
+          "x": -6.5,
+          "y": 0.0,
+          "z": -0.5
+        },
+        "features": {
+          "load_pct": 13.1,
+          "voltage_pu": 1.007,
+          "temperature_c": 28.7,
+          "age_years": 16.0,
+          "capacity_mva": 552.0,
+          "p_mw": 71.0,
+          "q_mvar": 14.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "B6",
+        "bus_id": 5,
+        "name": "B6 (138kV)",
+        "type": "load",
+        "position": {
+          "x": -5.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "features": {
+          "load_pct": 25.2,
+          "voltage_pu": 0.994,
+          "temperature_c": 30.7,
+          "age_years": 17.0,
+          "capacity_mva": 552.0,
+          "p_mw": 136.0,
+          "q_mvar": 126.78,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G7",
+        "bus_id": 6,
+        "name": "G7 (138kV)",
+        "type": "generator",
+        "position": {
+          "x": -3.5,
+          "y": 0.0,
+          "z": -2.0
+        },
+        "features": {
+          "load_pct": 23.1,
+          "voltage_pu": 1.025,
+          "temperature_c": 30.2,
+          "age_years": 18.0,
+          "capacity_mva": 552.0,
+          "p_mw": -115.0,
+          "q_mvar": -49.19,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "F8",
+        "bus_id": 7,
+        "name": "F8 (138kV)",
+        "type": "load",
+        "position": {
+          "x": -2.0,
+          "y": 0.0,
+          "z": -4.5
+        },
+        "features": {
+          "load_pct": 31.6,
+          "voltage_pu": 0.979,
+          "temperature_c": 32.2,
+          "age_years": 19.0,
+          "capacity_mva": 552.0,
+          "p_mw": 171.0,
+          "q_mvar": 35.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "B9",
+        "bus_id": 8,
+        "name": "B9 (138kV)",
+        "type": "load",
+        "position": {
+          "x": -3.5,
+          "y": 0.0,
+          "z": -4.5
+        },
+        "features": {
+          "load_pct": 32.4,
+          "voltage_pu": 0.963,
+          "temperature_c": 32.4,
+          "age_years": 20.0,
+          "capacity_mva": 552.0,
+          "p_mw": 175.0,
+          "q_mvar": 36.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "B10",
+        "bus_id": 9,
+        "name": "B10 (138kV)",
+        "type": "load",
+        "position": {
+          "x": -3.5,
+          "y": 0.0,
+          "z": -6.0
+        },
+        "features": {
+          "load_pct": 36.1,
+          "voltage_pu": 1.005,
+          "temperature_c": 33.5,
+          "age_years": 21.0,
+          "capacity_mva": 552.0,
+          "p_mw": 195.0,
+          "q_mvar": 40.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "T11",
+        "bus_id": 10,
+        "name": "T11 (230kV)",
+        "type": "transformer",
+        "position": {
+          "x": -0.5,
+          "y": 1.5,
+          "z": -6.5
+        },
+        "features": {
+          "load_pct": 5.0,
+          "voltage_pu": 0.997,
+          "temperature_c": 28.1,
+          "age_years": 22.0,
+          "capacity_mva": 920.0,
+          "p_mw": 0.0,
+          "q_mvar": 0.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "T12",
+        "bus_id": 11,
+        "name": "T12 (230kV)",
+        "type": "transformer",
+        "position": {
+          "x": 1.5,
+          "y": 1.5,
+          "z": -6.5
+        },
+        "features": {
+          "load_pct": 5.0,
+          "voltage_pu": 1.01,
+          "temperature_c": 28.1,
+          "age_years": 23.0,
+          "capacity_mva": 920.0,
+          "p_mw": 0.0,
+          "q_mvar": 0.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G13",
+        "bus_id": 12,
+        "name": "G13 (230kV)",
+        "type": "generator",
+        "position": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": -4.0
+        },
+        "features": {
+          "load_pct": 29.4,
+          "voltage_pu": 1.02,
+          "temperature_c": 31.6,
+          "age_years": 24.0,
+          "capacity_mva": 920.0,
+          "p_mw": -10.61,
+          "q_mvar": -37.82,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G14",
+        "bus_id": 13,
+        "name": "G14 (230kV)",
+        "type": "generator",
+        "position": {
+          "x": 0.0,
+          "y": 1.5,
+          "z": -1.0
+        },
+        "features": {
+          "load_pct": 31.2,
+          "voltage_pu": 0.98,
+          "temperature_c": 32.1,
+          "age_years": 25.0,
+          "capacity_mva": 920.0,
+          "p_mw": 281.3,
+          "q_mvar": 69.27,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G15",
+        "bus_id": 14,
+        "name": "G15 (230kV)",
+        "type": "generator",
+        "position": {
+          "x": 2.5,
+          "y": 1.5,
+          "z": 0.0
+        },
+        "features": {
+          "load_pct": 35.2,
+          "voltage_pu": 1.014,
+          "temperature_c": 33.2,
+          "age_years": 26.0,
+          "capacity_mva": 920.0,
+          "p_mw": 102.0,
+          "q_mvar": 85.69,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G16",
+        "bus_id": 15,
+        "name": "G16 (230kV)",
+        "type": "generator",
+        "position": {
+          "x": 4.0,
+          "y": 1.5,
+          "z": 1.5
+        },
+        "features": {
+          "load_pct": 11.1,
+          "voltage_pu": 1.017,
+          "temperature_c": 28.5,
+          "age_years": 12.0,
+          "capacity_mva": 920.0,
+          "p_mw": -55.0,
+          "q_mvar": -29.29,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "T17",
+        "bus_id": 16,
+        "name": "T17 (230kV)",
+        "type": "transformer",
+        "position": {
+          "x": 5.5,
+          "y": 1.5,
+          "z": 3.0
+        },
+        "features": {
+          "load_pct": 5.0,
+          "voltage_pu": 1.039,
+          "temperature_c": 28.1,
+          "age_years": 13.0,
+          "capacity_mva": 920.0,
+          "p_mw": 0.0,
+          "q_mvar": 0.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G18",
+        "bus_id": 17,
+        "name": "G18 (230kV)",
+        "type": "generator",
+        "position": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": 4.0
+        },
+        "features": {
+          "load_pct": 36.9,
+          "voltage_pu": 1.05,
+          "temperature_c": 33.7,
+          "age_years": 14.0,
+          "capacity_mva": 920.0,
+          "p_mw": -67.0,
+          "q_mvar": -70.88,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "B19",
+        "bus_id": 18,
+        "name": "B19 (230kV)",
+        "type": "load",
+        "position": {
+          "x": 1.0,
+          "y": 1.5,
+          "z": 3.5
+        },
+        "features": {
+          "load_pct": 20.1,
+          "voltage_pu": 1.023,
+          "temperature_c": 29.7,
+          "age_years": 15.0,
+          "capacity_mva": 920.0,
+          "p_mw": 181.0,
+          "q_mvar": 37.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "B20",
+        "bus_id": 19,
+        "name": "B20 (230kV)",
+        "type": "load",
+        "position": {
+          "x": -1.0,
+          "y": 1.5,
+          "z": 3.0
+        },
+        "features": {
+          "load_pct": 14.2,
+          "voltage_pu": 1.038,
+          "temperature_c": 28.8,
+          "age_years": 16.0,
+          "capacity_mva": 920.0,
+          "p_mw": 128.0,
+          "q_mvar": 26.0,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "T21",
+        "bus_id": 20,
+        "name": "T21 (230kV)",
+        "type": "transformer",
+        "position": {
+          "x": 4.5,
+          "y": 1.5,
+          "z": 5.5
+        },
+        "features": {
+          "load_pct": 43.5,
+          "voltage_pu": 1.05,
+          "temperature_c": 35.9,
+          "age_years": 17.0,
+          "capacity_mva": 920.0,
+          "p_mw": -400.0,
+          "q_mvar": -106.76,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G22",
+        "bus_id": 21,
+        "name": "G22 (230kV)",
+        "type": "generator",
+        "position": {
+          "x": 6.0,
+          "y": 1.5,
+          "z": 6.0
+        },
+        "features": {
+          "load_pct": 32.6,
+          "voltage_pu": 1.05,
+          "temperature_c": 32.5,
+          "age_years": 18.0,
+          "capacity_mva": 920.0,
+          "p_mw": -300.0,
+          "q_mvar": 29.52,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "G23",
+        "bus_id": 22,
+        "name": "G23 (230kV)",
+        "type": "generator",
+        "position": {
+          "x": -1.5,
+          "y": 1.5,
+          "z": 5.0
+        },
+        "features": {
+          "load_pct": 71.7,
+          "voltage_pu": 1.05,
+          "temperature_c": 49.6,
+          "age_years": 19.0,
+          "capacity_mva": 920.0,
+          "p_mw": -660.0,
+          "q_mvar": -123.63,
+          "is_tripped": false
+        }
+      },
+      {
+        "id": "S24",
+        "bus_id": 23,
+        "name": "S24 (230kV)",
+        "type": "substation",
+        "position": {
+          "x": 0.0,
+          "y": 1.5,
+          "z": 6.5
+        },
+        "features": {
+          "load_pct": 5.0,
+          "voltage_pu": 0.987,
+          "temperature_c": 28.1,
+          "age_years": 20.0,
+          "capacity_mva": 920.0,
+          "p_mw": 0.0,
+          "q_mvar": 0.0,
+          "is_tripped": false
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "L1",
+        "source": "G1",
+        "target": "G2",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 16.1,
+        "p_from_mw": 11.59,
+        "q_from_mvar": -26.86,
+        "r_ohm": 0.4951,
+        "x_ohm": 2.6471,
+        "is_tripped": false
+      },
+      {
+        "id": "L2",
+        "source": "G1",
+        "target": "B3",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 25.0,
+        "p_from_mw": -5.31,
+        "q_from_mvar": 39.12,
+        "r_ohm": 10.398,
+        "x_ohm": 40.2209,
+        "is_tripped": false
+      },
+      {
+        "id": "L3",
+        "source": "G1",
+        "target": "B5",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 34.0,
+        "p_from_mw": 57.73,
+        "q_from_mvar": 19.3,
+        "r_ohm": 4.1516,
+        "x_ohm": 16.0922,
+        "is_tripped": false
+      },
+      {
+        "id": "L4",
+        "source": "G2",
+        "target": "S4",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 30.9,
+        "p_from_mw": 39.38,
+        "q_from_mvar": 36.38,
+        "r_ohm": 6.2464,
+        "x_ohm": 24.1287,
+        "is_tripped": false
+      },
+      {
+        "id": "L5",
+        "source": "G2",
+        "target": "B6",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 27.1,
+        "p_from_mw": 47.21,
+        "q_from_mvar": 8.99,
+        "r_ohm": 9.4649,
+        "x_ohm": 36.5645,
+        "is_tripped": false
+      },
+      {
+        "id": "L6",
+        "source": "B3",
+        "target": "B9",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 13.8,
+        "p_from_mw": 17.93,
+        "q_from_mvar": -14.47,
+        "r_ohm": 5.8656,
+        "x_ohm": 22.6624,
+        "is_tripped": false
+      },
+      {
+        "id": "L7",
+        "source": "S4",
+        "target": "B9",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 25.1,
+        "p_from_mw": -35.54,
+        "q_from_mvar": 21.29,
+        "r_ohm": 5.1038,
+        "x_ohm": 19.7486,
+        "is_tripped": false
+      },
+      {
+        "id": "L8",
+        "source": "B5",
+        "target": "B10",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 8.9,
+        "p_from_mw": -14.03,
+        "q_from_mvar": 4.73,
+        "r_ohm": 4.342,
+        "x_ohm": 16.8159,
+        "is_tripped": false
+      },
+      {
+        "id": "L9",
+        "source": "B6",
+        "target": "B10",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 87.5,
+        "p_from_mw": -89.89,
+        "q_from_mvar": -116.67,
+        "r_ohm": 2.6471,
+        "x_ohm": 11.5216,
+        "is_tripped": false
+      },
+      {
+        "id": "L10",
+        "source": "G7",
+        "target": "F8",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 70.1,
+        "p_from_mw": 115.0,
+        "q_from_mvar": 49.19,
+        "r_ohm": 3.028,
+        "x_ohm": 11.693,
+        "is_tripped": false
+      },
+      {
+        "id": "L11",
+        "source": "F8",
+        "target": "B9",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 24.2,
+        "p_from_mw": -35.27,
+        "q_from_mvar": 17.88,
+        "r_ohm": 8.1318,
+        "x_ohm": 31.4416,
+        "is_tripped": false
+      },
+      {
+        "id": "L12",
+        "source": "F8",
+        "target": "B10",
+        "type": "line",
+        "capacity_mva": 175.0,
+        "loading_pct": 15.0,
+        "p_from_mw": -23.09,
+        "q_from_mvar": -11.21,
+        "r_ohm": 8.1318,
+        "x_ohm": 31.4416,
+        "is_tripped": false
+      },
+      {
+        "id": "L13",
+        "source": "T11",
+        "target": "G13",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 27.2,
+        "p_from_mw": -131.2,
+        "q_from_mvar": -33.47,
+        "r_ohm": 3.2269,
+        "x_ohm": 25.1804,
+        "is_tripped": false
+      },
+      {
+        "id": "L14",
+        "source": "T11",
+        "target": "G14",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 26.9,
+        "p_from_mw": -118.68,
+        "q_from_mvar": 53.79,
+        "r_ohm": 2.8566,
+        "x_ohm": 22.1122,
+        "is_tripped": false
+      },
+      {
+        "id": "L15",
+        "source": "T12",
+        "target": "G13",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 16.6,
+        "p_from_mw": -82.78,
+        "q_from_mvar": -14.22,
+        "r_ohm": 3.2269,
+        "x_ohm": 25.1804,
+        "is_tripped": false
+      },
+      {
+        "id": "L16",
+        "source": "T12",
+        "target": "G23",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 44.0,
+        "p_from_mw": -222.05,
+        "q_from_mvar": -0.75,
+        "r_ohm": 6.5596,
+        "x_ohm": 51.1014,
+        "is_tripped": false
+      },
+      {
+        "id": "L17",
+        "source": "G13",
+        "target": "G23",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 40.2,
+        "p_from_mw": -204.89,
+        "q_from_mvar": -1.29,
+        "r_ohm": 5.8719,
+        "x_ohm": 45.7585,
+        "is_tripped": false
+      },
+      {
+        "id": "L18",
+        "source": "G14",
+        "target": "G16",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 81.9,
+        "p_from_mw": -400.93,
+        "q_from_mvar": -14.25,
+        "r_ohm": 2.645,
+        "x_ohm": 20.5781,
+        "is_tripped": false
+      },
+      {
+        "id": "L19",
+        "source": "G15",
+        "target": "G16",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 24.2,
+        "p_from_mw": 118.28,
+        "q_from_mvar": -33.24,
+        "r_ohm": 1.1638,
+        "x_ohm": 9.1517,
+        "is_tripped": false
+      },
+      {
+        "id": "L20",
+        "source": "G15",
+        "target": "T21",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 43.1,
+        "p_from_mw": -214.21,
+        "q_from_mvar": -42.13,
+        "r_ohm": 3.3327,
+        "x_ohm": 25.921,
+        "is_tripped": false
+      },
+      {
+        "id": "L21",
+        "source": "G15",
+        "target": "T21",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 43.1,
+        "p_from_mw": -214.21,
+        "q_from_mvar": -42.13,
+        "r_ohm": 3.3327,
+        "x_ohm": 25.921,
+        "is_tripped": false
+      },
+      {
+        "id": "L22",
+        "source": "G15",
+        "target": "S24",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 41.8,
+        "p_from_mw": 208.14,
+        "q_from_mvar": 31.82,
+        "r_ohm": 3.5443,
+        "x_ohm": 27.4551,
+        "is_tripped": false
+      },
+      {
+        "id": "L23",
+        "source": "G16",
+        "target": "T17",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 64.1,
+        "p_from_mw": -324.09,
+        "q_from_mvar": -33.51,
+        "r_ohm": 1.7457,
+        "x_ohm": 13.7011,
+        "is_tripped": false
+      },
+      {
+        "id": "L24",
+        "source": "G16",
+        "target": "B19",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 19.0,
+        "p_from_mw": 87.74,
+        "q_from_mvar": -40.45,
+        "r_ohm": 1.587,
+        "x_ohm": 12.2199,
+        "is_tripped": false
+      },
+      {
+        "id": "L25",
+        "source": "T17",
+        "target": "G18",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 38.0,
+        "p_from_mw": -188.19,
+        "q_from_mvar": -58.61,
+        "r_ohm": 0.9522,
+        "x_ohm": 7.6176,
+        "is_tripped": false
+      },
+      {
+        "id": "L26",
+        "source": "T17",
+        "target": "G22",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 27.1,
+        "p_from_mw": -139.28,
+        "q_from_mvar": 4.32,
+        "r_ohm": 7.1415,
+        "x_ohm": 55.7037,
+        "is_tripped": false
+      },
+      {
+        "id": "L27",
+        "source": "G18",
+        "target": "T21",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 11.8,
+        "p_from_mw": -60.92,
+        "q_from_mvar": 5.21,
+        "r_ohm": 1.7457,
+        "x_ohm": 13.7011,
+        "is_tripped": false
+      },
+      {
+        "id": "L28",
+        "source": "G18",
+        "target": "T21",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 11.8,
+        "p_from_mw": -60.92,
+        "q_from_mvar": 5.21,
+        "r_ohm": 1.7457,
+        "x_ohm": 13.7011,
+        "is_tripped": false
+      },
+      {
+        "id": "L29",
+        "source": "B19",
+        "target": "B20",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 11.7,
+        "p_from_mw": -46.76,
+        "q_from_mvar": -37.22,
+        "r_ohm": 2.6979,
+        "x_ohm": 20.9484,
+        "is_tripped": false
+      },
+      {
+        "id": "L30",
+        "source": "B19",
+        "target": "B20",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 11.7,
+        "p_from_mw": -46.76,
+        "q_from_mvar": -37.22,
+        "r_ohm": 2.6979,
+        "x_ohm": 20.9484,
+        "is_tripped": false
+      },
+      {
+        "id": "L31",
+        "source": "B20",
+        "target": "G23",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 22.9,
+        "p_from_mw": -110.92,
+        "q_from_mvar": -42.61,
+        "r_ohm": 1.4812,
+        "x_ohm": 11.4264,
+        "is_tripped": false
+      },
+      {
+        "id": "L32",
+        "source": "B20",
+        "target": "G23",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 22.9,
+        "p_from_mw": -110.92,
+        "q_from_mvar": -42.61,
+        "r_ohm": 1.4812,
+        "x_ohm": 11.4264,
+        "is_tripped": false
+      },
+      {
+        "id": "L33",
+        "source": "T21",
+        "target": "G22",
+        "type": "line",
+        "capacity_mva": 500.0,
+        "loading_pct": 30.4,
+        "p_from_mw": -156.27,
+        "q_from_mvar": 20.08,
+        "r_ohm": 4.6023,
+        "x_ohm": 35.8662,
+        "is_tripped": false
+      },
+      {
+        "id": "TR1",
+        "source": "S24",
+        "target": "B3",
+        "type": "trafo",
+        "capacity_mva": 400.0,
+        "loading_pct": 53.8,
+        "p_from_mw": 205.22,
+        "q_from_mvar": 20.16,
+        "r_ohm": 0.01,
+        "x_ohm": 0.08,
+        "is_tripped": false
+      },
+      {
+        "id": "TR2",
+        "source": "T11",
+        "target": "B9",
+        "type": "trafo",
+        "capacity_mva": 400.0,
+        "loading_pct": 26.3,
+        "p_from_mw": 101.7,
+        "q_from_mvar": 6.92,
+        "r_ohm": 0.01,
+        "x_ohm": 0.08,
+        "is_tripped": false
+      },
+      {
+        "id": "TR3",
+        "source": "T12",
+        "target": "B9",
+        "type": "trafo",
+        "capacity_mva": 400.0,
+        "loading_pct": 33.3,
+        "p_from_mw": 128.23,
+        "q_from_mvar": 24.12,
+        "r_ohm": 0.01,
+        "x_ohm": 0.08,
+        "is_tripped": false
+      },
+      {
+        "id": "TR4",
+        "source": "T11",
+        "target": "B10",
+        "type": "trafo",
+        "capacity_mva": 400.0,
+        "loading_pct": 38.6,
+        "p_from_mw": 148.18,
+        "q_from_mvar": -27.23,
+        "r_ohm": 0.01,
+        "x_ohm": 0.08,
+        "is_tripped": false
+      },
+      {
+        "id": "TR5",
+        "source": "T12",
+        "target": "B10",
+        "type": "trafo",
+        "capacity_mva": 400.0,
+        "loading_pct": 44.6,
+        "p_from_mw": 176.58,
+        "q_from_mvar": -9.15,
+        "r_ohm": 0.01,
+        "x_ohm": 0.08,
+        "is_tripped": false
+      }
+    ]
+  },
+  "model_output": {
+    "node_risk": {
+      "G1": 0.07,
+      "G2": 0.07,
+      "B3": 0.12,
+      "S4": 0.06,
+      "B5": 0.06,
+      "B6": 0.08,
+      "G7": 0.09,
+      "F8": 0.1,
+      "B9": 0.16,
+      "B10": 0.17,
+      "T11": 0.07,
+      "T12": 0.12,
+      "G13": 0.16,
+      "G14": 0.09,
+      "G15": 0.16,
+      "G16": 0.08,
+      "T17": 0.17,
+      "G18": 0.28,
+      "B19": 0.13,
+      "B20": 0.13,
+      "T21": 0.28,
+      "G22": 0.26,
+      "G23": 0.35,
+      "S24": 0.13
+    },
+    "time_to_critical": {
+      "G1": 6.7,
+      "G2": 6.6,
+      "B3": 6.4,
+      "S4": 6.7,
+      "B5": 6.7,
+      "B6": 6.7,
+      "G7": 6.6,
+      "F8": 6.6,
+      "B9": 5.8,
+      "B10": 5.7,
+      "T11": 6.4,
+      "T12": 6.1,
+      "G13": 5.9,
+      "G14": 6.6,
+      "G15": 6.1,
+      "G16": 6.7,
+      "T17": 6.0,
+      "G18": 5.6,
+      "B19": 6.2,
+      "B20": 6.3,
+      "T21": 5.6,
+      "G22": 5.6,
+      "G23": 5.3,
+      "S24": 6.2
+    },
+    "root_cause_ranking": [
+      {
+        "node": "G23",
+        "root_cause_score": 0.07,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G18",
+        "root_cause_score": 0.06,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "T21",
+        "root_cause_score": 0.06,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G22",
+        "root_cause_score": 0.05,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "B9",
+        "root_cause_score": 0.03,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "B10",
+        "root_cause_score": 0.03,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G13",
+        "root_cause_score": 0.03,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G15",
+        "root_cause_score": 0.03,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "T17",
+        "root_cause_score": 0.03,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "B19",
+        "root_cause_score": 0.03,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "B20",
+        "root_cause_score": 0.03,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "S24",
+        "root_cause_score": 0.03,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G1",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G2",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "B3",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "S4",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "B5",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "B6",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G7",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "F8",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "T11",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "T12",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G14",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      },
+      {
+        "node": "G16",
+        "root_cause_score": 0.02,
+        "explained_by_upstream": false,
+        "explained_by": null,
+        "reasons": [
+          "Normal operating range or minor ambient stress"
+        ]
+      }
+    ],
+    "confidence_interval": {
+      "G1": [
+        0.01,
+        0.14
+      ],
+      "G2": [
+        0.01,
+        0.14
+      ],
+      "B3": [
+        0.05,
+        0.18
+      ],
+      "S4": [
+        0.0,
+        0.12
+      ],
+      "B5": [
+        0.0,
+        0.12
+      ],
+      "B6": [
+        0.01,
+        0.15
+      ],
+      "G7": [
+        0.02,
+        0.15
+      ],
+      "F8": [
+        0.04,
+        0.17
+      ],
+      "B9": [
+        0.1,
+        0.23
+      ],
+      "B10": [
+        0.11,
+        0.24
+      ],
+      "T11": [
+        0.01,
+        0.14
+      ],
+      "T12": [
+        0.05,
+        0.18
+      ],
+      "G13": [
+        0.1,
+        0.23
+      ],
+      "G14": [
+        0.02,
+        0.15
+      ],
+      "G15": [
+        0.1,
+        0.23
+      ],
+      "G16": [
+        0.01,
+        0.15
+      ],
+      "T17": [
+        0.11,
+        0.24
+      ],
+      "G18": [
+        0.22,
+        0.35
+      ],
+      "B19": [
+        0.07,
+        0.2
+      ],
+      "B20": [
+        0.07,
+        0.2
+      ],
+      "T21": [
+        0.22,
+        0.35
+      ],
+      "G22": [
+        0.2,
+        0.33
+      ],
+      "G23": [
+        0.28,
+        0.41
+      ],
+      "S24": [
+        0.07,
+        0.2
+      ]
+    },
+    "cascade_path": [
+      "B14"
+    ],
+    "cascade_timeline": [
+      {
+        "step": 0,
+        "node": "B14",
+        "event": "Severe thermal overload on B14 (stress x1.45)",
+        "cascade_risk_pct": 67.8
+      }
+    ],
+    "cascade_risk_pct": 67.8,
+    "predicted_failures": [],
+    "feature_attributions": {
+      "G1": {
+        "Temperature": 33.0,
+        "Load": 0.0,
+        "Neighbor transfer": 12.0,
+        "Voltage deviation": 24.0,
+        "Other": 31.0
+      },
+      "G2": {
+        "Temperature": 31.0,
+        "Load": 0.0,
+        "Neighbor transfer": 12.0,
+        "Voltage deviation": 25.0,
+        "Other": 32.0
+      },
+      "B3": {
+        "Temperature": 39.0,
+        "Load": 0.0,
+        "Neighbor transfer": 15.0,
+        "Voltage deviation": 24.0,
+        "Other": 22.0
+      },
+      "S4": {
+        "Temperature": 31.0,
+        "Load": 0.0,
+        "Neighbor transfer": 12.0,
+        "Voltage deviation": 20.0,
+        "Other": 37.0
+      },
+      "B5": {
+        "Temperature": 36.0,
+        "Load": 0.0,
+        "Neighbor transfer": 15.0,
+        "Voltage deviation": 7.0,
+        "Other": 42.0
+      },
+      "B6": {
+        "Temperature": 45.0,
+        "Load": 0.0,
+        "Neighbor transfer": 16.0,
+        "Voltage deviation": 5.0,
+        "Other": 34.0
+      },
+      "G7": {
+        "Temperature": 36.0,
+        "Load": 0.0,
+        "Neighbor transfer": 16.0,
+        "Voltage deviation": 17.0,
+        "Other": 31.0
+      },
+      "F8": {
+        "Temperature": 44.0,
+        "Load": 0.0,
+        "Neighbor transfer": 15.0,
+        "Voltage deviation": 13.0,
+        "Other": 28.0
+      },
+      "B9": {
+        "Temperature": 38.0,
+        "Load": 0.0,
+        "Neighbor transfer": 20.0,
+        "Voltage deviation": 19.0,
+        "Other": 23.0
+      },
+      "B10": {
+        "Temperature": 48.0,
+        "Load": 0.0,
+        "Neighbor transfer": 24.0,
+        "Voltage deviation": 3.0,
+        "Other": 25.0
+      },
+      "T11": {
+        "Temperature": 32.0,
+        "Load": 0.0,
+        "Neighbor transfer": 18.0,
+        "Voltage deviation": 3.0,
+        "Other": 47.0
+      },
+      "T12": {
+        "Temperature": 27.0,
+        "Load": 0.0,
+        "Neighbor transfer": 26.0,
+        "Voltage deviation": 9.0,
+        "Other": 38.0
+      },
+      "G13": {
+        "Temperature": 39.0,
+        "Load": 0.0,
+        "Neighbor transfer": 23.0,
+        "Voltage deviation": 12.0,
+        "Other": 26.0
+      },
+      "G14": {
+        "Temperature": 45.0,
+        "Load": 0.0,
+        "Neighbor transfer": 14.0,
+        "Voltage deviation": 13.0,
+        "Other": 28.0
+      },
+      "G15": {
+        "Temperature": 45.0,
+        "Load": 0.0,
+        "Neighbor transfer": 22.0,
+        "Voltage deviation": 8.0,
+        "Other": 25.0
+      },
+      "G16": {
+        "Temperature": 30.0,
+        "Load": 0.0,
+        "Neighbor transfer": 17.0,
+        "Voltage deviation": 15.0,
+        "Other": 38.0
+      },
+      "T17": {
+        "Temperature": 20.0,
+        "Load": 0.0,
+        "Neighbor transfer": 27.0,
+        "Voltage deviation": 25.0,
+        "Other": 28.0
+      },
+      "G18": {
+        "Temperature": 35.0,
+        "Load": 0.0,
+        "Neighbor transfer": 28.0,
+        "Voltage deviation": 20.0,
+        "Other": 17.0
+      },
+      "B19": {
+        "Temperature": 32.0,
+        "Load": 0.0,
+        "Neighbor transfer": 22.0,
+        "Voltage deviation": 16.0,
+        "Other": 30.0
+      },
+      "B20": {
+        "Temperature": 25.0,
+        "Load": 0.0,
+        "Neighbor transfer": 21.0,
+        "Voltage deviation": 25.0,
+        "Other": 29.0
+      },
+      "T21": {
+        "Temperature": 40.0,
+        "Load": 0.0,
+        "Neighbor transfer": 26.0,
+        "Voltage deviation": 18.0,
+        "Other": 16.0
+      },
+      "G22": {
+        "Temperature": 32.0,
+        "Load": 0.0,
+        "Neighbor transfer": 28.0,
+        "Voltage deviation": 21.0,
+        "Other": 19.0
+      },
+      "G23": {
+        "Temperature": 46.0,
+        "Load": 34.0,
+        "Neighbor transfer": 3.0,
+        "Voltage deviation": 9.0,
+        "Other": 8.0
+      },
+      "S24": {
+        "Temperature": 26.0,
+        "Load": 0.0,
+        "Neighbor transfer": 27.0,
+        "Voltage deviation": 11.0,
+        "Other": 36.0
+      }
+    },
+    "recommended_intervention": {
+      "action": "Reduce B14 loading by 12%",
+      "target_node": "B14",
+      "reduction_pct": 12.0,
+      "redistribute_to": [
+        "B14",
+        "B19"
+      ],
+      "expected_risk_reduction": 55.8,
+      "narrative": "Reducing B14 loading by 12% drops cascade risk from 68% to 12% (56 percentage points reduction). Cascade propagation along path ['B14'] is halted."
+    },
+    "physics_validation": {
+      "power_balance_ok": false,
+      "voltage_constraints_ok": true,
+      "thermal_constraints_ok": true,
+      "powerflow_converged": true,
+      "total_generation_mw": 1270.5,
+      "total_load_mw": 2850.0,
+      "total_losses_mw": 52.8,
+      "mismatch_mw": 1632.22
+    }
+  }
+}
