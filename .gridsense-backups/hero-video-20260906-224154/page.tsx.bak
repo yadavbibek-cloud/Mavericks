@@ -1,0 +1,52 @@
+"use client";
+import { useEffect } from "react";
+import { useIntroVideo } from "@/hooks/useIntroVideo";
+import { HeroVideo } from "@/components/home/HeroVideo";
+import { Hero } from "@/components/home/Hero";
+import { StatsSection } from "@/components/home/StatsSection";
+import { AboutPreview } from "@/components/home/AboutPreview";
+import { HowItWorks } from "@/components/home/HowItWorks";
+import { GridPreview } from "@/components/home/GridPreview";
+import { CTASection } from "@/components/home/CTASection";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+
+export default function HomePage() {
+  const { hydrated, isVideoPlaying, shouldShowHero, markCompleted, state } = useIntroVideo();
+
+  // Ensure dark mode is active on homepage
+  useEffect(() => {
+    document.body.classList.add("dark-mode");
+    return () => document.body.classList.remove("dark-mode");
+  }, []);
+
+  // Prevent hydration mismatch by not rendering until client-side
+  if (!hydrated) {
+    return (
+      <div className="min-h-screen bg-gs-bg-primary flex items-center justify-center">
+        <div className="w-8 h-8 rounded-full border-2 border-gs-cyan-500 border-t-transparent animate-spin" />
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {isVideoPlaying && <HeroVideo onComplete={markCompleted} />}
+
+      {shouldShowHero && (
+        <>
+          <Navbar variant="transparent" />
+          <main>
+            <Hero animated={state === "completed"} />
+            <StatsSection />
+            <AboutPreview />
+            <HowItWorks />
+            <GridPreview />
+            <CTASection />
+          </main>
+          <Footer />
+        </>
+      )}
+    </>
+  );
+}
