@@ -1,51 +1,82 @@
-<div>
-<h2 className="text-lg font-semibold text-gs-gray-900">Top Predicted Risks</h2>
-<p className="text-sm text-gs-gray-500">Assets ranked by AI-predicted failure probability</p>
-</div>
-<Link href="/map-explorer" className="text-xs text-gs-blue-600 font-medium hover:underline">
-View on Map →
-</Link>
-</div>
-<table className="w-full">
-<thead className="bg-gs-gray-50 border-b border-gs-gray-200">
-<tr className="text-left text-xs uppercase tracking-widest text-gs-gray-500">
-<th className="px-6 py-3 font-semibold">Asset</th>
-<th className="px-6 py-3 font-semibold">Type</th>
-<th className="px-6 py-3 font-semibold">Risk Score</th>
-<th className="px-6 py-3 font-semibold">Level</th>
-<th className="px-6 py-3 font-semibold">Action</th>
-</tr>
-</thead>
-<tbody>
-{nodeRisks.map(([id, risk]) => {
-const level = risk > 0.7 ? "Critical" : risk > 0.4 ? "High" : risk > 0.2 ? "Warning" : "Healthy";
-const badgeClass = risk > 0.7 ? "bg-red-100 text-red-700 border-red-200" :
-risk > 0.4 ? "bg-amber-100 text-amber-700 border-amber-200" :
-risk > 0.2 ? "bg-yellow-100 text-yellow-700 border-yellow-200" :
-"bg-green-100 text-green-700 border-green-200";
-return (
-<tr key={id} className="border-b border-gs-gray-100 hover:bg-gs-gray-50">
-<td className="px-6 py-4">
-<div className="font-mono font-bold text-gs-gray-900">{id}</div>
-</td>
-<td className="px-6 py-4 text-sm text-gs-gray-600">Transformer</td>
-<td className="px-6 py-4">
-<div className="flex items-center gap-3">
-<div className="w-32 h-1.5 bg-gs-gray-100 rounded-full overflow-hidden">
-<div className="h-full bg-gs-blue-500 rounded-full" style={{ width: `${risk * 100}%` }} />
-</div>
-<span className="font-mono text-sm font-semibold text-gs-gray-900">{Math.round(risk * 100)}%</span>
-</div>
-</td>
-<td className="px-6 py-4">
-<span className={`inline-block px-2 py-0.5 rounded-full border text-xs font-medium ${badgeClass}`}>
-{level}
-</span>
-</td>
-<td className="px-6 py-4">
-<Link href="/map-explorer" className="text-xs text-gs-blue-600 hover:underline">View →</Link>
-</td>
-</tr>
-);
-})}
-</tbody>
+"use client";
+
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { Cpu, ShieldCheck, GitBranch, Binary, BarChart2, ArrowRight } from "lucide-react";
+import Link from "next/link";
+
+export default function IntelligencePage() {
+  return (
+    <div className="min-h-screen bg-gs-bg-primary text-gs-text-primary flex flex-col">
+      <Navbar variant="dark" />
+      <main className="flex-1 pt-24 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gs-bg-panel border border-gs-border text-xs font-mono uppercase tracking-widest text-gs-cyan-400 mb-4">
+              <Cpu className="w-3.5 h-3.5" />
+              Machine Learning Architecture
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Inductive Graph Neural Networks & Causal Attribution
+            </h1>
+            <p className="text-gs-text-secondary text-base leading-relaxed">
+              GridSense combines spatial topological deep learning with distribution-free conformal calibration and Granger causality to deliver mathematically guaranteed contingency forecasting.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-gs-bg-panel border border-gs-border rounded-lg p-6">
+              <div className="w-10 h-10 rounded bg-gs-blue-500/10 border border-gs-blue-500/30 flex items-center justify-center text-gs-blue-400 mb-4">
+                <GitBranch className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">GraphSAGE Spatial Aggregator</h3>
+              <p className="text-xs text-gs-text-secondary leading-relaxed mb-4">
+                Aggregates node embeddings across multi-hop electrical neighborhoods using admittance-weighted adjacency matrices and LayerNorm residual connections.
+              </p>
+              <div className="text-[11px] font-mono text-gs-cyan-400 bg-gs-bg-secondary p-2.5 rounded border border-gs-border">
+                {"h_v^(k) = σ(W · [h_v^(k-1) || AGG({h_u^(k-1)})])"}
+              </div>
+            </div>
+
+            <div className="bg-gs-bg-panel border border-gs-border rounded-lg p-6">
+              <div className="w-10 h-10 rounded bg-gs-green-500/10 border border-gs-green-500/30 flex items-center justify-center text-gs-green-400 mb-4">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Split-Conformal Bounds</h3>
+              <p className="text-xs text-gs-text-secondary leading-relaxed mb-4">
+                Guarantees distribution-free 90% statistical coverage on risk prediction intervals, eliminating neural network overconfidence in safety-critical grid dispatches.
+              </p>
+              <div className="text-[11px] font-mono text-gs-green-400 bg-gs-bg-secondary p-2.5 rounded border border-gs-border">
+                P(Y ∈ [L_i, U_i]) ≥ 1 - α = 90.0% Coverage
+              </div>
+            </div>
+
+            <div className="bg-gs-bg-panel border border-gs-border rounded-lg p-6">
+              <div className="w-10 h-10 rounded bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-4">
+                <Binary className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Granger Causal Isolator</h3>
+              <p className="text-xs text-gs-text-secondary leading-relaxed mb-4">
+                Evaluates temporal onset precedence and shortest path graph distance to differentiate originating root causes from downstream overloaded symptoms.
+              </p>
+              <div className="text-[11px] font-mono text-amber-400 bg-gs-bg-secondary p-2.5 rounded border border-gs-border">
+                True Cause: T17 (91%) | Downstream: F8 (22%)
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/map-explorer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-gs-cyan-500 hover:bg-gs-cyan-400 text-gs-bg-primary font-bold text-sm rounded-md transition-all shadow-lg shadow-gs-cyan-500/20"
+            >
+              Launch Live Map Explorer & Model Sandbox
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
