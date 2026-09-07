@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+@theme {
+/* ── Lightly Dark Professional Palette ── */
+--color-gs-bg-primary: #0F141A;
+--color-gs-bg-secondary: #151C23;
+--color-gs-bg-panel: #1A222B;
+--color-gs-bg-elevated: #202A34;
+--color-gs-bg-overlay: #262F39;
+
+--color-gs-border: #303B46;
+--color-gs-border-light: #3A4652;
+--color-gs-border-focus: #4A5865;
+
+--color-gs-text-primary: #F2F5F7;
+--color-gs-text-secondary: #AAB5BF;
+--color-gs-text-tertiary: #75818C;
+--color-gs-text-muted: #55606B;
+
+--color-gs-blue-600: #1E6FD9;
+--color-gs-blue-500: #2F80ED;
+--color-gs-blue-400: #5A9BF2;
+--color-gs-blue-100: #DCE9FA;
+--color-gs-blue-50: #F0F6FF;
+
+--color-gs-cyan-500: #25B7D3;
+--color-gs-cyan-400: #45C7DF;
+--color-gs-cyan-300: #7ED8E8;
+
+--color-gs-green-500: #38A169;
+--color-gs-green-400: #48BB78;
+--color-gs-amber-500: #D69E2E;
+--color-gs-amber-400: #ECC94B;
+--color-gs-red-600: #C53030;
+--color-gs-red-500: #E05252;
+--color-gs-red-400: #FC8181;
+
+--color-gs-gray-50: #F8FAFC;
+--color-gs-gray-100: #F1F5F9;
+--color-gs-gray-200: #E2E8F0;
+--color-gs-gray-300: #CBD5E1;
+--color-gs-gray-400: #94A3B8;
+--color-gs-gray-500: #64748B;
+--color-gs-gray-600: #475569;
+--color-gs-gray-700: #334155;
+--color-gs-gray-800: #1E293B;
+--color-gs-gray-900: #0F172A;
+
+/* Legacy Navy tokens preserved */
+--color-gs-navy-950: #0F141A;
+--color-gs-navy-900: #151C23;
+--color-gs-navy-800: #1A222B;
+--color-gs-navy-700: #202A34;
+--color-gs-navy-600: #303B46;
+--color-gs-navy-500: #4A5865;
+
+/* Legacy grid tokens preserved for 3D components */
+--color-grid-bg-primary: #0F141A;
+--color-grid-bg-secondary: #151C23;
+--color-grid-bg-panel: #1A222B;
+--color-grid-bg-elevated: #202A34;
+--color-grid-border: #303B46;
+--color-grid-border-light: #3A4652;
+--color-grid-border-focus: #4A5865;
+--color-grid-cyan: #25B7D3;
+--color-grid-cyan-dim: #1E9AB2;
+--color-grid-green: #38A169;
+--color-grid-green-dim: #2F855A;
+--color-grid-yellow: #D69E2E;
+--color-grid-yellow-dim: #B7791F;
+--color-grid-red: #E05252;
+--color-grid-red-dim: #C53030;
+--color-grid-purple: #9F7AEA;
+--color-grid-purple-dim: #805AD5;
+--color-grid-text-primary: #F2F5F7;
+--color-grid-text-secondary: #AAB5BF;
+--color-grid-text-tertiary: #75818C;
+--color-grid-text-muted: #55606B;
+
+--font-sans: "Inter", "Manrope", system-ui, sans-serif;
+--font-mono: "JetBrains Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+background-color: #FFFFFF;
+color: #0F172A;
+font-family: var(--font-sans);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+scroll-behavior: smooth;
+}
+
+body.dark-mode {
+background-color: #0F141A;
+color: #F2F5F7;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background-color: #F1F5F9; }
+::-webkit-scrollbar-thumb { background-color: #CBD5E1; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background-color: #94A3B8; }
+
+body.dark-mode::-webkit-scrollbar-track { background-color: #151C23; }
+body.dark-mode::-webkit-scrollbar-thumb { background-color: #303B46; }
+body.dark-mode::-webkit-scrollbar-thumb:hover { background-color: #4A5865; }
+
+/* Preserved legacy classes for 3D components */
+.panel {
+background-color: #1A222B;
+border: 1px solid #303B46;
+border-radius: 0.5rem;
+box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+.label {
+font-size: 0.625rem;
+line-height: 0.875rem;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+color: #75818C;
+}
+.status-dot { width: 0.375rem; height: 0.375rem; border-radius: 9999px; }
+.glow-border-cyan { box-shadow: 0 0 0 1px rgba(37, 183, 211, 0.3), 0 0 15px rgba(37, 183, 211, 0.1); }
+.glow-border-red { box-shadow: 0 0 0 1px rgba(224, 82, 82, 0.4), 0 0 15px rgba(224, 82, 82, 0.15); }
+.shadow-panel { box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5); }
+
+/* Institutional utilities */
+.text-institutional { letter-spacing: -0.01em; }
+.container-official {
+max-width: 1280px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+
+/* ── Refined Animations ── */
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(24px); }
+to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+@keyframes titleReveal {
+0% { opacity: 0; transform: translateY(20px); letter-spacing: 0.3em; }
+60% { opacity: 1; letter-spacing: 0.06em; }
+100% { opacity: 1; transform: translateY(0); letter-spacing: 0.02em; }
+}
+@keyframes subtleGlow {
+0%, 100% { text-shadow: 0 0 20px rgba(37, 183, 211, 0.15); }
+50% { text-shadow: 0 0 30px rgba(37, 183, 211, 0.3); }
+}
+@keyframes videoFadeOut {
+0% { opacity: 1; }
+100% { opacity: 0; }
+}
+@keyframes pulseDot {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.4; }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards; }
+.animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
+.animate-title-reveal { animation: titleReveal 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards; }
+.animate-subtle-glow { animation: subtleGlow 4s ease-in-out infinite; }
+.animate-video-fade-out { animation: videoFadeOut 1.2s cubic-bezier(0.7, 0, 0.3, 1) forwards; }
+.animate-pulse-dot { animation: pulseDot 2s ease-in-out infinite; }
+
+/* Respect reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+*, *::before, *::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+scroll-behavior: auto !important;
+}
+}
