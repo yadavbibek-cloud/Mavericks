@@ -80,7 +80,7 @@ function AlertRow({ alert }: { alert: any }) {
             </div>
           </div>
         </div>
-        <Link href="/map-explorer" className="shrink-0 text-xs font-medium text-gs-blue-600 hover:underline">
+        <Link href="http://localhost:8000" className="shrink-0 text-xs font-medium text-gs-blue-600 hover:underline">
           View on Map →
         </Link>
       </div>

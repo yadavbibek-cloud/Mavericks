@@ -82,14 +82,14 @@ export function Hero({ animated = true }: HeroProps) {
           style={animated ? { animationDelay: "0.9s", opacity: 0 } : {}}
         >
           <Link
-            href="/map-explorer"
+            href="http://localhost:8000"
             className="group inline-flex items-center gap-2 px-7 py-3 bg-gs-blue-500 hover:bg-gs-blue-600 text-white font-medium rounded-md transition-all shadow-lg shadow-gs-blue-500/20"
           >
             Explore Grid
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
           <Link
-            href="/map-explorer"
+            href="http://localhost:8000"
             className="inline-flex items-center gap-2 px-7 py-3 bg-gs-bg-panel hover:bg-gs-bg-elevated border border-gs-border hover:border-gs-cyan-500/50 text-gs-text-primary font-medium rounded-md transition-all"
           >
             <MapPin className="w-4 h-4" />

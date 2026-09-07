@@ -53,7 +53,7 @@ export default function IntelligencePage() {
                 <h2 className="text-lg font-semibold text-gs-gray-900">Top Predicted Risks</h2>
                 <p className="text-sm text-gs-gray-500">Assets ranked by AI-predicted failure probability</p>
               </div>
-              <Link href="/map-explorer" className="text-xs text-gs-blue-600 font-medium hover:underline">
+              <Link href="http://localhost:8000" className="text-xs text-gs-blue-600 font-medium hover:underline">
                 View on Map →
               </Link>
             </div>
@@ -94,7 +94,7 @@ export default function IntelligencePage() {
                         </span>
                       </td>
                       <td className="px-6 py-4">
-                        <Link href="/map-explorer" className="text-xs text-gs-blue-600 hover:underline">View →</Link>
+                        <Link href="http://localhost:8000" className="text-xs text-gs-blue-600 hover:underline">View →</Link>
                       </td>
                     </tr>
                   );

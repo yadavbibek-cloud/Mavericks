@@ -35,7 +35,7 @@ export function CTASection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
-              href="/map-explorer"
+              href="http://localhost:8000"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-gs-cyan-500 hover:bg-gs-cyan-400 text-gs-bg-primary font-semibold rounded-md transition-all shadow-lg shadow-gs-cyan-500/25"
             >
               <MapPin className="w-5 h-5" />

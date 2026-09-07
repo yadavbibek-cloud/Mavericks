@@ -7,7 +7,7 @@ import { Menu, X, Zap } from "lucide-react";
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
-  { href: "/map-explorer", label: "Map Explorer" },
+  { href: "http://localhost:8000", label: "Map Explorer" },
   { href: "/intelligence", label: "Intelligence" },
   { href: "/analytics", label: "Analytics" },
   { href: "/alerts", label: "Alerts" },
@@ -93,7 +93,7 @@ export function Navbar({ variant = "light" }: { variant?: "light" | "dark" | "tr
             Login
           </Link>
           <Link
-            href="/dashboard"
+            href="http://localhost:8000"
             className={`px-4 py-1.5 text-[13px] font-semibold rounded-md transition-colors ${
               isDarkContext
                 ? "bg-gs-cyan-500 text-gs-bg-primary hover:bg-gs-cyan-400"
@@ -143,7 +143,7 @@ export function Navbar({ variant = "light" }: { variant?: "light" | "dark" | "tr
                 Login
               </Link>
               <Link
-                href="/dashboard"
+                href="http://localhost:8000"
                 onClick={() => setMobileOpen(false)}
                 className={`flex-1 text-center px-4 py-2 text-sm font-semibold rounded-md ${
                   isDarkContext ? "bg-gs-cyan-500 text-gs-bg-primary" : "bg-gs-blue-500 text-white"
